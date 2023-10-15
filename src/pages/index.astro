@@ -1,0 +1,44 @@
+---
+import "@fontsource-variable/manrope";
+import Gradient from "../components/Gradient.astro";
+import ContentLink from "../components/ContentLink.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body
+    class="px-12 py-8 space-y-12 font-sans font-bold bg-gray-50 text-gray-950"
+  >
+    <nav class="flex items-center space-x-4">
+      <Gradient />
+      <h1 class="text-4xl">&colon;&sol;&sol;glazy</h1>
+    </nav>
+    <main class="text-2xl leading-normal space-y-6 max-w-2xl">
+      <p>
+        Hi, I&apos;m Luke. I&apos;m a Software Developer, Indie Creator, and
+        Open Source Advocate.
+      </p>
+
+      <p>
+        I don&apos;t have a blog currently although it is something I am
+        considering...
+      </p>
+
+      <p>
+        In the meantime, if you want to follow what I&apos;m doing - I&apos;ll
+        be on
+        <ContentLink href="https://bsky.app/profile/glazy.dev">
+          BlueSky
+        </ContentLink> and <ContentLink href="https://github.com/glazy">
+          GitHub.
+        </ContentLink>
+      </p>
+    </main>
+  </body>
+</html>
